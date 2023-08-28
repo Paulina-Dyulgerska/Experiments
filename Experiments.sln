@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksConcurrency", "TasksCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksTime", "TasksTime\TasksTime.csproj", "{68E953FC-1D1C-4C59-AFCC-80FD3DE7BE7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableReferenceTypes", "NullableReferenceTypes\NullableReferenceTypes.csproj", "{7A87A7D2-848D-46BE-89EE-381D97684C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReferenceTypes", "NullableReferenceTypes\NullableReferenceTypes.csproj", "{7A87A7D2-848D-46BE-89EE-381D97684C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colletions", "Colletions\Colletions.csproj", "{2072F319-0AC7-44EC-94D9-95F19F73DCFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7A87A7D2-848D-46BE-89EE-381D97684C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A87A7D2-848D-46BE-89EE-381D97684C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A87A7D2-848D-46BE-89EE-381D97684C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2072F319-0AC7-44EC-94D9-95F19F73DCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2072F319-0AC7-44EC-94D9-95F19F73DCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2072F319-0AC7-44EC-94D9-95F19F73DCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2072F319-0AC7-44EC-94D9-95F19F73DCFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
