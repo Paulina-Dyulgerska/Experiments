@@ -17,7 +17,7 @@ namespace Tasks
             Console.WriteLine("Start Main 1 " + DateTime.UtcNow.ToString("T"));
             //new Task(() => PrintNumbersInRange(1, 10)).Start();
             //var f1 = DoStuff1();
-             DoStuff1();
+            DoStuff1();
             Console.WriteLine("Finish Main 1 " + DateTime.UtcNow.ToString("T"));
 
             Console.WriteLine(new string('-', 60));
@@ -30,8 +30,8 @@ namespace Tasks
 
             //Console.WriteLine($"{f1.Result} + {f2.Result}");
             Console.WriteLine("Finish Main await Task.WhenAll(f1, f2); " + DateTime.UtcNow.ToString("T"));
-            
-            
+
+
             Console.WriteLine("Start Main 0 " + DateTime.UtcNow.ToString("T"));
             var t = new Task(async () => await DoStuff());
             t.Start();
@@ -68,7 +68,7 @@ namespace Tasks
             Console.WriteLine("Start DoStuff 1 " + DateTime.UtcNow.ToString("T"));
             //Thread.Sleep(5000);
             new Task(() => PrintNumbersInRange(21, 30));
-             Task.Delay(10000).ContinueWith((a) => PrintNumbersInRange(100, 110));
+            Task.Delay(10000).ContinueWith((a) => PrintNumbersInRange(100, 110));
             Console.WriteLine("Finish DoStuff 1 " + DateTime.UtcNow.ToString("T"));
             await Task.Run(() => PrintNumbersInRange(1, 10));
             //throw new Exception();
@@ -88,6 +88,7 @@ namespace Tasks
                                                                  //Ako iskam da se izpylni, trqbwa da
                                                                  // spra s Console.Readline Main methoda, za
                                                                  // da moje da se izpylni i towa!!!
+            var tttt = new Task(() => PrintNumbersInRange(11, 20));
 
         }
 
