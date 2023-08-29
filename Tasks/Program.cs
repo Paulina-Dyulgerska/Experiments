@@ -38,6 +38,14 @@ namespace Tasks
             await Task.WhenAll(t);
             Console.WriteLine("Finish Main 0 " + DateTime.UtcNow.ToString("T"));
 
+
+            Console.WriteLine("Start Main with new Task returned " + DateTime.UtcNow.ToString("T"));
+            var tt = DoStuff2();
+            //tt.Wait();
+            Console.WriteLine("Finish Main with new Task returned " + DateTime.UtcNow.ToString("T"));
+
+
+
             Console.ReadLine(); //ako nqmam await na Task.Delay(10000) i nqmam tozi red tuk, programata 
             //shte svyrshi PREDI tezi Taskove, koito sa bez await, da sa svyrshili rabotata si i az nqma 
             // da q polucha tazi rabota kato resultat!!!! Task.Delay(10000) se mqtka v ThreadPool-a i ostawa
@@ -51,8 +59,6 @@ namespace Tasks
             // zawisi ot towa dali mi e Main-a async ili ne - svyrshi li coda, izliza ot Main i zatwqrq 
             // programata, bez znacheni dali ima taskowe, koito ne sa svyrshili rabotata si.
             // DA PROVERQ DALI AKO DYJRA TQHNA instancii, shte e pak taka!!!!
-
-
         }
         static async Task DoStuff()
         {
@@ -88,8 +94,8 @@ namespace Tasks
                                                                  //Ako iskam da se izpylni, trqbwa da
                                                                  // spra s Console.Readline Main methoda, za
                                                                  // da moje da se izpylni i towa!!!
-            var tttt = new Task(() => PrintNumbersInRange(11, 20));
-
+            var tttt = new Task(() => PrintNumbersInRange(1001, 1010));
+            tttt.Start();
         }
 
         static void PrintNumbersInRange(int a, int b)
